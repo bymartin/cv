@@ -4,93 +4,72 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Barry's Personal Site</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
+    <title>Barry Martin</title>
   </head>
   <body>
-    <table cellspacing="20">
-      <tr>
-        <td>
-          <img
-            src="barry_400x400-crop-circle.png"
-            alt="Barry profile picture"
-            width="200px"
-            height="200px"
-          />
-        </td>
-        <td>
-          <h1>Barry Martin</h1>
-          <p>
-            <em
-              >Software Developer at
-              <strong
-                ><a href="https://www.ericsson.com/en">Ericsson</a></strong
-              ></em
-            >
-          </p>
-          <p>I am a Python and Web Developer. I ❤️ coffee.</p>
-        </td>
-      </tr>
-    </table>
+    <div class="top-container">
+      <img class="top-cloud" src="images/cloud.png" alt="cloud-img" />
+      <h1>I'm Barry.</h1>
+      <h2>a <span class="pro">pro</span>grammer.</h2>
+      <img class="bottom-cloud" src="images/cloud.png" alt="cloud-img" />
+      <img src="images/mountain.png" alt="mountain-img" />
+    </div>
 
-    <hr />
-    <h3>Education</h3>
-    <ul>
-      <li><a href="https://tulane.edu/">Tulane University</a></li>
-      <li>
-        <a
-          href="https://www.udemy.com/course/the-complete-web-development-bootcamp"
-          >The Complete Web Development Bootcamp</a
-        >
-      </li>
-    </ul>
-    <hr>
-    <h3>Work Experience</h3>
-    <table cellspacing="10">
-      <thead>
-        <tr>
-          <th>Dates</th>
-          <th>Work</th>
-        </tr>
-      </thead>
-      <tr>
-        <td>2000-2021</td>
-        <td>Media Gateway Engineer at Ericsson</td>
-      </tr>
-      <tr>
-        <td>2022-present</td>
-        <td>Full Stack Web Developer at Ericsson</td>
-      </tr>
-    </table>
-    <hr>
-    <h3>Skills</h3>
-    <table cellspacing="10">
-      <tr>
-        <td>Python</td>
-        <td>⭐⭐⭐⭐⭐</td>
-      </tr>
-      <tr>
-        <td>Docker</td>
-        <td>⭐⭐⭐⭐</td>
-      </tr>
-      <tr>
-        <td>JavaScript</td>
-        <td>⭐⭐⭐⭐</td>
-      </tr>
-      <tr>
-        <td>Git</td>
-        <td>⭐⭐⭐⭐⭐</td>
-      </tr>
-      <tr>
-        <td>Kubernetes</td>
-        <td>⭐⭐⭐</td>
-      </tr>
-      <tr>
-        <td>HTML/CSS</td>
-        <td>⭐⭐⭐⭐</td>
-      </tr>
-    </table>
-    <hr>
-    <a href="hobbies.html">My Hobbies</a>
-    <a href="contact.html">Contact Me</a>
+    <div class="middle-container">
+      <div class="profile">
+        <img class="circular" src="images/barry-pic.jfif" alt="barry-profile-pic" />
+        <h2>Hello.</h2>
+        <p class="intro">
+            I am a Python and full-stack Web Developer. I ❤️ coffee and hot wings🍗.
+        </p>
+      </div>
+      <hr />
+      <div class="skills">
+        <h2>My Skills.</h2>
+        <div class="skill-row">
+          <img class="computer-img" src="images/computer.png" alt="computer-image" />
+          <h3>Design & Development</h3>
+          <p>
+            I started programming in high school with a <a href="https://en.wikipedia.org/wiki/TRS-80_Color_Computer">TRS-80 Color Computer</a> at home and
+            the Apple IIe in my senior year. I got my degree in Computer Engineering at
+            <a href="https://tulane.edu/">Tulane University</a>
+            and have been developing ever since.
+          </p>
+        </div>
+        <div class="skill-row">
+          <img class="coding-img" src="images/coding.webp" alt="computer-image" />
+          <h3>Programming Languages</h3>
+          <p>
+            I've worked with C, C++, Java, and Python over my career.
+            Currently, I am a full-stack web developer (HTML, CSS, JavaScript, MongoDB).
+          </p>
+        </div>
+      </div>
+      <hr />
+      <div class="contact-me">
+        <h2>Get In Touch</h2>
+        <h3>Feel free to contact me or check out my profile.</h3>
+        <p class="contact-messge">
+          Follow the links below.
+        </p>
+        <a class="btn" href="mailto:barrymartintx@gmail.com">CONTACT ME</a>
+      </div>
+    </div>
+
+    <div class="bottom-container">
+      <a class="footer-link" href="https://www.linkedin.com/in/barrymartin1/">LinkedIn</a>
+      <a class="footer-link" href="https://github.com/bymartin">Github</a>
+      <a class="footer-link" href="https://www.ericsson.com/">Ericsson</a>
+      <p class="copyright">©2021 Barry Martin.</p>
+    </div>
   </body>
 </html>
+

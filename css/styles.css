@@ -1,0 +1,180 @@
+body {
+  color: #40514e;
+  margin: 0;
+  text-align: center;
+  /* font-family: verdana, sans-serif; */
+  font-family: "Merriweather", serif;
+}
+
+h1 {
+  /* for font size, px is static, % or em is dynamic */
+  /* if you use dynamic, font size is inherited so if you have a size in
+    the body, and then in h1, it will add to it - static px does not do this */
+  /* CSS3 adds rem so if you have h1 with font-size: 5.625rem; it is the root em
+    and will ignore parent. */
+  /* RECOMMENDATION: use rem, less error prone, more predicatable */
+  /* font-size of 100% = 16px, so to covert 90px
+    90/16 x 100 = 562.5 
+    font-size: 90px; */
+  /* Another way is the em, 16 px = 1em */
+  /* font-size: 5.625em; */
+  /* font-size: 562.5%; */
+  font-size: 5.625rem;
+  font-family: "Sacramento", cursive;
+  color: #66bfbf;
+  /* 
+    how to center block element not taking full width
+    width: 10%;
+    margin: 0 auto; 
+    */
+  margin-top: 50px auto 0 auto;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5rem;
+  font-weight: normal;
+  color: #66bfbf;
+  padding-bottom: 10px;
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+  color: #11999e;
+}
+
+p {
+  line-height: 2;
+}
+
+hr {
+  border: dotted #eaf6f6 6px;
+  border-bottom: none;
+  width: 4%;
+  margin: 100px auto;
+}
+
+a {
+  color: #11999e;
+  font-family: "Montserrat", sans-serif;
+}
+
+.top-container {
+  /* Enclosing container needs to be relative so that
+    cloud classes can be absolute to it. */
+  background-color: #e4f9f5;
+  position: relative;
+  padding-top: 100px;
+}
+
+.pro {
+  text-decoration: underline;
+}
+
+.intro {
+  width: 30%;
+  margin: auto;
+}
+
+.contact-message {
+  width: 40%;
+  margin: 40px auto 60px;
+}
+
+.copyright {
+    color: #EAF6F6;
+    font-size: 0.75rem;
+    padding: 20px 0;
+}
+
+.middle-container {
+  margin: 100px 0;
+}
+
+.skill-row {
+  width: 50%;
+  margin: 100px auto;
+  text-align: left;
+}
+
+.bottom-container {
+  background-color: #66bfbf;
+  padding: 50px 0 20px;
+}
+
+.top-cloud {
+  position: absolute;
+  right: 300px;
+  top: 40px;
+}
+
+.bottom-cloud {
+  position: absolute;
+  left: 250px;
+  bottom: 300px;
+}
+
+.circular {
+  border-radius: 100%;
+}
+
+.computer-img {
+  width: 25%;
+  float: left;
+  margin-right: 30px;
+}
+
+.coding-img {
+  width: 25%;
+  float: right;
+  margin-left: 30px;
+}
+
+/* This class was set on the 2 paragraphs to 
+show how to prevent it from wrapping around
+the image */
+/* .design-description {
+    clear: left;
+}
+
+.language-description {
+    clear: right;
+} */
+
+.btn {
+  background: #11cdd4;
+  background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+  background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #30e3cb;
+  background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+  text-decoration: none;
+}
+
+.footer-link {
+  color: #11999e;
+  font-family: "Montserrat", sans-serif;
+  margin: 10px 20px;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+    color: #EAF6F6;
+}
